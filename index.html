@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS Coloring - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to KS Coloring</h1>
+        <p class="quote">"Colors are the smiles of nature. Let’s paint your world with joy!"</p>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="order.html">Place an Order</a>
+            <a href="admin.html">Admin Panel</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Choose Your Colors & Textures</h2>
+        <div class="color-picker">
+            <label for="color">Select a Color:</label>
+            <input type="color" id="color" name="color" onchange="updateColor()">
+        </div>
+
+        <h2>Select a Texture</h2>
+        <div class="texture-container">
+            <div class="texture" onclick="applyTexture('texture1.jpg')" style="background-image: url('textures/texture1.jpg');"></div>
+            <div class="texture" onclick="applyTexture('texture2.jpg')" style="background-image: url('textures/texture2.jpg');"></div>
+            <div class="texture" onclick="applyTexture('texture3.jpg')" style="background-image: url('textures/texture3.jpg');"></div>
+        </div>
+
+        <button onclick="placeOrder()">Order Now</button>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:kscoloring@gmail.com">kscoloring@gmail.com</a> | 📞 9876543210</p>
+        <p>© 2025 KS Coloring | Created by <strong>Kanhaiya Suryavanshi</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
